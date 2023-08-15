@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+    <TextView
+        android:id="@+id/nomor"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="Nomor"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/numberEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_below="@id/nomor"
+        android:hint="Nomor" />
+    <TextView
+        android:id="@+id/nama"
+        android:textStyle="bold"
+        android:layout_below="@id/numberEditText"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="Nama"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/nameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nama"
+        android:layout_marginTop="2dp"
+        android:hint="Nama" />
+
+    <TextView
+        android:id="@+id/gender"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_below="@id/nameEditText"
+        android:layout_height="30dp"
+        android:text="Jenis Kelamin"/>
+
+    <RadioGroup
+        android:id="@+id/genderRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gender"
+        android:layout_marginTop="2dp">
+
+        <RadioButton
+            android:id="@+id/maleRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Laki-laki" />
+
+        <RadioButton
+            android:id="@+id/femaleRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Perempuan" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/ttl"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_below="@id/genderRadioGroup"
+        android:layout_height="30dp"
+        android:text="Tanggal Lahir"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/birthDateEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ttl"
+        android:layout_marginTop="2dp"
+        android:hint="Tanggal Lahir" />
+
+    <TextView
+        android:id="@+id/alamat"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_below="@id/birthDateEditText"
+        android:layout_height="30dp"
+        android:text="Alamat"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/addressEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/birthDateEditText"
+        android:layout_marginTop="25dp"
+        android:hint="Alamat" />
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/baseline_check_24"
+        android:layout_below="@id/addressEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="Submit" />
+
+</RelativeLayout>
